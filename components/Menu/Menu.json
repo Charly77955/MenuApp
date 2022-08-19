@@ -1,0 +1,38 @@
+{
+    "TrendingMenu": [
+        {
+            "id": "1",
+            "plato": "Hamburguesa con papas",
+            "imagen": "hamburguesa-con-papas.png"
+            
+        },
+        {
+            "id": "2",
+            "plato": "Pizza jamon y morron",
+            "imagen": "pizza-jamon-morron.png"
+        },
+        {
+            "id": "3",
+            "plato": "Papas con cheddar",
+            "imagen": "papas-con-cheddar.png"
+        },
+        {
+            "id": "4",
+            "plato": "Sandwich vegano",
+            "imagen": "sandwich-vegano.png"
+
+        },
+        {
+            "id": "5",
+            "plato": "Pastel de papa",
+            "imagen": "pastel-de-papa.png"
+        },
+        {
+            "id": "6",
+            "plato": "Picada",
+            "imagen":"picada.png"
+        }
+
+    ]
+    
+}
