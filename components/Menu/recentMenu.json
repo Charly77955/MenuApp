@@ -1,0 +1,33 @@
+{
+    "recentMenu":[
+        {
+            "id": "1",
+            "plato": "pozole",
+            "imagen": "pozole.jpeg"
+        },
+        {
+            "id": "2",
+            "plato": "carne en su jugo",
+            "imagen": "carne-en-su-jugo.jpeg"
+        },
+        {
+            "id": "3",
+            "plato": "tacos de adobada",
+            "imagen": "tacos-de-adobada.jpeg"
+        },
+        {
+            "id": "4",
+            "plato": "sushi",
+            "imagen": "sushi.jpeg"
+        },
+            "id": "5",
+            "plato": "torta ahogada",
+            "imagen": "torta-ahogada.jpeg"
+        },
+        {
+            "id": "6",
+            "plato": "ramen",
+            "imagen": "ramen.jpeg"
+        }
+    ]
+}
