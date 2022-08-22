@@ -7,13 +7,15 @@ import {
   TextInput,
   ScrollView,
   Button,
-  TouchableHighlight,
+  TouchableHighlight
 } from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {
   faMicrophone,
   faMagnifyingGlass,
 } from '@fortawesome/free-solid-svg-icons';
+import DisplayTrendingMenu from '../DisplayMenu/DisplayTrendingMenu';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export class MainScreen extends Component {
   constructor(props) {
@@ -31,20 +33,23 @@ export class MainScreen extends Component {
               style={styles.searchBarInput}
               placeholder="What do you want to eat?"
               placeholderTextColor="white"></TextInput>
-          </View>
+            </View>
           <FontAwesomeIcon icon={faMicrophone} color="white" />
         </View>
-        <View>
+        <SafeAreaView>
           <Text style={styles.subtitle}>Trending</Text>
-          <Text>Placeholder</Text>
-        </View>
+          <ScrollView horizontal={true}>
+          <DisplayTrendingMenu/>
+          </ScrollView>
+          
+        </SafeAreaView>
         <View>
           <Text style={styles.subtitle}>Recent</Text>
-          <ScrollView style={styles.dishes} horizontal={true}>
-            <ScrollView style={styles.dishes} horizontal={true}>
-              <Text>Placeholder</Text>
+          
+          
+            <ScrollView  horizontal={true}>
+            
             </ScrollView>
-          </ScrollView>
         </View>
       </View>
     );
@@ -100,21 +105,19 @@ const styles = StyleSheet.create({
   },
   dishes: {
     flexDirection: 'row',
-  },
-  dish: {
-    flexDirection: 'column',
-    marginRight: 20,
-  },
-  foodTrendingImage: {
-    width: 100,
-    height: 100,
-    marginBottom: 10,
-  },
-  foodRecentImage: {
-    width: 150,
+    width: 200,
     height: 150,
-    marginBottom: 10,
+    marginBottom: 10
   },
+  // dish: {
+  //   flexDirection: 'column',
+  //   marginRight: 20,
+  // },
+  // foodRecentImage: {
+  //   width: 150,
+  //   height: 150,
+  //   marginBottom: 10,
+  // },
   foodText: {
     color: 'white',
     marginBottom: 20,
