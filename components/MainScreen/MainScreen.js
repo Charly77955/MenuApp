@@ -9,14 +9,10 @@ import {
   Button,
   TouchableHighlight
 } from 'react-native';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {
-  faMicrophone,
-  faMagnifyingGlass,
-} from '@fortawesome/free-solid-svg-icons';
 import DisplayTrendingMenu from '../DisplayMenu/DisplayTrendingMenu';
+import SearchBar from '../SearchBar/SearchBar';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
+import HorizontalList from '../HorizontalList/HorizontalList';
 export class MainScreen extends Component {
   constructor(props) {
     super(props);
@@ -26,16 +22,7 @@ export class MainScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.searchBar}>
-          <View style={styles.searchBarLeft}>
-            <FontAwesomeIcon icon={faMagnifyingGlass} color="white" />
-            <TextInput
-              style={styles.searchBarInput}
-              placeholder="What do you want to eat?"
-              placeholderTextColor="white"></TextInput>
-            </View>
-          <FontAwesomeIcon icon={faMicrophone} color="white" />
-        </View>
+        <SearchBar/>
         <SafeAreaView>
           <Text style={styles.subtitle}>Trending</Text>
           <ScrollView horizontal={true}>
@@ -45,10 +32,8 @@ export class MainScreen extends Component {
         </SafeAreaView>
         <View>
           <Text style={styles.subtitle}>Recent</Text>
-          
-          
             <ScrollView  horizontal={true}>
-            
+              <HorizontalList/>
             </ScrollView>
         </View>
       </View>
@@ -61,38 +46,6 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 24,
     backgroundColor: '#343840',
-  },
-  searchBar: {
-    marginTop: 16,
-    paddingLeft: 10,
-    paddingRight: 10,
-    borderWidth: 4,
-    borderColor: '#20232a',
-    borderRadius: 20,
-    backgroundColor: '#A6A6A6',
-    color: 'white',
-    textAlign: 'left',
-    fontSize: 12,
-    fontWeight: 'bold',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  searchBarLeft: {
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-  },
-  searchBarInput: {
-    paddingLeft: 20,
-    paddingRight: 20,
-  },
-  searchBarText: {
-    color: 'white',
-    paddingLeft: 10,
-    textAlign: 'left',
-    fontSize: 12,
-    fontWeight: 'bold',
   },
   subtitle: {
     marginTop: 16,
