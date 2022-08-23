@@ -6,52 +6,47 @@ import {
   TouchableOpacity,
   FlatList,
 } from 'react-native';
-import TrendingMenu from '../DataMenu/Menu.json';
+
 import ListItem from '../ListItem/ListItem';
 
 export default HorizontalList = () => {
-  const TrendingMenu = [
+  const recentMenu = [
     {
-      id: '1',
-      name: 'Hamburguesa con papas',
-      imagen:
-        'https://previews.123rf.com/images/maxsheb/maxsheb1909/maxsheb190900134/129462448-hamburguesa-con-papas-fritas-en-el-pergamino.jpg',
-    },
-    {
-      id: '2',
-      name: 'Pizza jamon y morron',
-      imagen:
-        'https://i0.wp.com/recetasargentinas.net/wp-content/uploads/2013/10/pizza-jamon-y-morrones-e1381836891874.jpg?fit=400%2C301&ssl=1',
-    },
-    {
-      id: '3',
-      name: 'Papas con cheddar',
-      imagen:
-        'https://media-cdn.tripadvisor.com/media/photo-p/17/60/6c/01/papas-fritas-con-queso.jpg',
-    },
-    {
-      id: '4',
-      name: 'Sandwich vegano',
-      imagen: 'https://www.clarin.com/img/2019/09/12/PzdIJYeve_1200x630__1.jpg',
-    },
-    {
-      id: '5',
-      name: 'Quesadillas',
-      imagen:
-        'https://www.paulinacocina.net/wp-content/uploads/2020/08/quesadillas-2124910-960-720-640x427.jpg?x11474',
-    },
-    {
-      id: '6',
-      name: 'Tacos de carne',
-      imagen:
-        'https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2020/01/09214916/RFB-2312-2-tacos.jpg',
-    },
+      "id": "1",
+      "name": "pozole",
+      "imagen": "https://d320djwtwnl5uo.cloudfront.net/recetas/share/pozol_LskhKImMVctRux2AQjTPirWZCUGJ76.png"
+  },
+  {
+      "id": "2",
+      "name": "carne en su jugo",
+      "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/images/2020/08/carne-en-su-jugo-para-4-personas.jpg"
+  },
+  {
+      "id": "3",
+      "name": "tacos de adobada",
+      "imagen": "https://i.pinimg.com/originals/a4/7c/c6/a47cc65ac43865d14bf03a631a5991b5.jpg"
+  },
+  {
+      "id": "4",
+      "name": "sushi",
+      "imagen": "https://images.hola.com/imagenes/cocina/recetas/20200408165233/maki-sushi-tempura-pollo/0-809-231/maki-sushi-pollo-m.jpg"
+  },
+  {
+      "id": "5",
+      "name": "torta ahogada",
+      "imagen": "https://dam.cocinafacil.com.mx/wp-content/uploads/2017/03/torta-ahogada-.jpg"
+  },
+  {
+      "id": "6",
+      "name": "ramen",
+      "imagen": "https://s1.eestatic.com/2016/11/15/cocinillas/cocinillas_170994703_116270236_1706x960.jpg"
+  }
   ];
 
   return (
     <FlatList
       horizontal
-      data={TrendingMenu}
+      data={recentMenu}
       keyExtractor={item => item.id}
       renderItem={ListItem}
     />
