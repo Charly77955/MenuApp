@@ -11,10 +11,11 @@ import {
   Dimensions,
   ImageBackground,
 } from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 export class DetailsScreen extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
   }
   render() {
     return (
@@ -25,7 +26,11 @@ export class DetailsScreen extends Component {
             source={require('../../images/carne-en-su-jugo.jpeg')}
             imageStyle={{opacity: 0.7}}>
             <View style={styles.imageHero}>
-              <TouchableHighlight style={styles.closeButton}>
+              <TouchableHighlight
+                style={styles.closeButton}
+                onPress={() => {
+                  this.props.navigation.goBack();
+                }}>
                 <Text style={styles.closeButtonText}>X</Text>
               </TouchableHighlight>
               <View style={styles.Titles}>

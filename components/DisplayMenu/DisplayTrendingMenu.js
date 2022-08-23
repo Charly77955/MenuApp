@@ -6,20 +6,27 @@ import {
   Image,
   StyleSheet,
   TouchableOpacity,
+  View,
 } from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 export default function DisplayTrendingMenu() {
+  const navigation = useNavigation();
   return (
-    <>
+    <View>
       {TrendingMenu.TrendingMenu.map((item, i) => (
         <SafeAreaView key={i}>
-          <TouchableOpacity style={styles.touch}>
+          <TouchableOpacity
+            style={styles.touch}
+            onPress={() => {
+              navigation.navigate('DetailsScreen');
+            }}>
             <Image source={{uri: item.imagen}} alt="" style={styles.img} />
             <Text style={styles.title}>{item.name}</Text>
           </TouchableOpacity>
         </SafeAreaView>
       ))}
-    </>
+    </View>
   );
 }
 
