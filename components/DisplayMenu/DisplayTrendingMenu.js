@@ -13,7 +13,7 @@ import {useNavigation} from '@react-navigation/native';
 export default function DisplayTrendingMenu() {
   const navigation = useNavigation();
   return (
-    <View>
+    <View style={styles.DTMBody}>
       {TrendingMenu.TrendingMenu.map((item, i) => (
         <SafeAreaView key={i}>
           <TouchableOpacity
@@ -31,6 +31,9 @@ export default function DisplayTrendingMenu() {
 }
 
 const styles = StyleSheet.create({
+  DTMBody: {
+    flexDirection: 'row',
+  },
   img: {
     width: 150,
     height: 150,
