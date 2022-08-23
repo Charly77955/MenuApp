@@ -7,11 +7,11 @@ import {
   TextInput,
   ScrollView,
   Button,
-  TouchableHighlight
+  TouchableHighlight,
 } from 'react-native';
 import DisplayTrendingMenu from '../DisplayMenu/DisplayTrendingMenu';
-import SearchBar from '../SearchBar/SearchBar';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import SearchBar from '../SearchBar/searchBar';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import HorizontalList from '../HorizontalList/HorizontalList';
 export class MainScreen extends Component {
   constructor(props) {
@@ -22,19 +22,18 @@ export class MainScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <SearchBar/>
+        <SearchBar />
         <SafeAreaView>
           <Text style={styles.subtitle}>Trending</Text>
           <ScrollView horizontal={true}>
-          <DisplayTrendingMenu/>
+            <DisplayTrendingMenu />
           </ScrollView>
-          
         </SafeAreaView>
         <View>
           <Text style={styles.subtitle}>Recent</Text>
-            <ScrollView  horizontal={true}>
-              <HorizontalList/>
-            </ScrollView>
+          <ScrollView horizontal={true}>
+            <HorizontalList />
+          </ScrollView>
         </View>
       </View>
     );
@@ -60,7 +59,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: 200,
     height: 150,
-    marginBottom: 10
+    marginBottom: 10,
   },
   // dish: {
   //   flexDirection: 'column',
