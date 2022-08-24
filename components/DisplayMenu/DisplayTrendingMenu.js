@@ -19,7 +19,9 @@ export default function DisplayTrendingMenu() {
           <TouchableOpacity
             style={styles.touch}
             onPress={() => {
-              navigation.navigate('DetailsScreen');
+              navigation.navigate('DetailsScreen', {
+                data: item,
+              });
             }}>
             <Image source={{uri: item.imagen}} alt="" style={styles.img} />
             <Text style={styles.title}>{item.name}</Text>

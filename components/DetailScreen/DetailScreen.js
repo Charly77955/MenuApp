@@ -18,12 +18,15 @@ export class DetailsScreen extends Component {
     super();
   }
   render() {
+    this.food = this.props.route.params?.data;
+    let image = {uri: this.food.imagen};
+    //console.log(this.food);
     return (
       <View style={styles.body}>
         <View style={styles.topContainer}>
           <ImageBackground
             style={styles.imageBackground}
-            source={require('../../images/carne-en-su-jugo.jpeg')}
+            source={image}
             imageStyle={{opacity: 0.7}}>
             <View style={styles.imageHero}>
               <TouchableHighlight
@@ -35,7 +38,7 @@ export class DetailsScreen extends Component {
               </TouchableHighlight>
               <View style={styles.Titles}>
                 <Text style={styles.textTag}>Tag Placeholder</Text>
-                <Text style={styles.textTitle}>Title Placeholder</Text>
+                <Text style={styles.textTitle}>{this.food.name}</Text>
               </View>
             </View>
           </ImageBackground>

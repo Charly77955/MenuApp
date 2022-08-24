@@ -10,7 +10,7 @@ import {
   TouchableHighlight,
 } from 'react-native';
 import DisplayTrendingMenu from '../DisplayMenu/DisplayTrendingMenu';
-import SearchBar from '../SearchBar/SearchBar';
+import SearchBar from '../SearchBar/searchBar';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import HorizontalList from '../HorizontalList/HorizontalList';
 export class MainScreen extends Component {
