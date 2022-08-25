@@ -12,6 +12,7 @@ import {useNavigation} from '@react-navigation/native';
 
 export default function DisplayTrendingMenu() {
   const navigation = useNavigation();
+  const tag = 'Trending';
   return (
     <View style={styles.DTMBody}>
       {TrendingMenu.TrendingMenu.map((item, i) => (
@@ -21,6 +22,7 @@ export default function DisplayTrendingMenu() {
             onPress={() => {
               navigation.navigate('DetailsScreen', {
                 data: item,
+                tag: tag,
               });
             }}>
             <Image source={{uri: item.imagen}} alt="" style={styles.img} />

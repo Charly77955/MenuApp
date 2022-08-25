@@ -3,13 +3,33 @@
         {
             "id": "1",
             "name": "Hamburguesa con papas",
-            "imagen": "https://previews.123rf.com/images/maxsheb/maxsheb1909/maxsheb190900134/129462448-hamburguesa-con-papas-fritas-en-el-pergamino.jpg"
-            
+            "imagen": "https://previews.123rf.com/images/maxsheb/maxsheb1909/maxsheb190900134/129462448-hamburguesa-con-papas-fritas-en-el-pergamino.jpg",
+            "servings": 6,
+            "ingredients": [
+            ["olive oil", "1 tbsp"],
+            ["onion ", "1"],
+            ["garlic cloves", "2"],
+            ["chorizo", "120g"],
+            ["chopped tomatoes", "2 x 400g cans"],
+            ["caster sugar", "1 tsp"],
+            ["fresh gnocchi", "600g"],
+            ["mozzarella ball", "125g"],
+            ["basil", "small bunch"]
+    ]
         },
         {
             "id": "2",
             "name": "Pizza jamon y morron",
-            "imagen": "https://i0.wp.com/recetasargentinas.net/wp-content/uploads/2013/10/pizza-jamon-y-morrones-e1381836891874.jpg?fit=400%2C301&ssl=1"
+            "imagen": "https://i0.wp.com/recetasargentinas.net/wp-content/uploads/2013/10/pizza-jamon-y-morrones-e1381836891874.jpg?fit=400%2C301&ssl=1",
+            "servings": 4,
+            "ingredients": [
+            ["toasted sesame oil", "2 tbsp"],
+            ["skinless and boneless chicken thighs", "6"],
+            ["large garlic cloves", "2"],
+            ["ginger", "1 thumb-sized piece"],
+            ["runny honey", "50g"],
+            ["light soy sauce", "30ml"]
+    ]
         },
         {
             "id": "3",
@@ -19,18 +39,38 @@
         {
             "id": "4",
             "name": "Sandwich vegano",
-            "imagen": "https://www.clarin.com/img/2019/09/12/PzdIJYeve_1200x630__1.jpg"
+            "imagen": "https://www.clarin.com/img/2019/09/12/PzdIJYeve_1200x630__1.jpg",
+            "servings": 8,
+            "ingredients": [
+                ["plain flour", "ea"],
+                ["large eggs", "2"],
+                ["milk", "300ml"],
+                ["sunflower or vegetable oil", "1 tbsp"]
+            ]
 
         },
         {
             "id": "5",
             "name": "Quesadillas",
-            "imagen": "https://www.paulinacocina.net/wp-content/uploads/2020/08/quesadillas-2124910-960-720-640x427.jpg?x11474"
+            "imagen": "https://www.paulinacocina.net/wp-content/uploads/2020/08/quesadillas-2124910-960-720-640x427.jpg?x11474",
+            "servings": 8,
+            "ingredients": [
+                ["large chicken breasts", "2"],
+                ["red onion", "1"],
+                ["red pepper", "1"],
+                ["red chilli", "1"]
+    ]
         },
         {
             "id": "6",
             "name": "Tacos de carne",
-            "imagen":"https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2020/01/09214916/RFB-2312-2-tacos.jpg"
+            "imagen":"https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2020/01/09214916/RFB-2312-2-tacos.jpg",
+            "servings": 24,
+            "ingredients": [
+                ["plain flour", "250g"],
+                ["caster sugar", "75g"],
+                ["butter", "175g"]
+            ]
         }
 
     ]

@@ -19,6 +19,7 @@ export class DetailsScreen extends Component {
   }
   render() {
     this.food = this.props.route.params?.data;
+    this.tag = this.props.route.params?.tag;
     let image = {uri: this.food.imagen};
     //console.log(this.food);
     return (
@@ -37,7 +38,7 @@ export class DetailsScreen extends Component {
                 <Text style={styles.closeButtonText}>X</Text>
               </TouchableHighlight>
               <View style={styles.Titles}>
-                <Text style={styles.textTag}>Tag Placeholder</Text>
+                <Text style={styles.textTag}>{this.tag}</Text>
                 <Text style={styles.textTitle}>{this.food.name}</Text>
               </View>
             </View>
@@ -46,10 +47,21 @@ export class DetailsScreen extends Component {
         <View style={styles.bottomContainer}>
           <View style={styles.bottomContainerTitles}>
             <Text style={styles.textIngedients}>Ingredients</Text>
-            <Text style={styles.textServings}>for Placeholder servings</Text>
+            <Text style={styles.textServings}>
+              for {this.food.servings} servings
+            </Text>
           </View>
           <View>
-            <Text style={styles.table}>ingredients Placeholder</Text>
+            <ScrollView style={styles.TableContainer}>
+              <View style={styles.table}>
+                {this.food.ingredients.map(i => (
+                  <View style={styles.tableRow}>
+                    <Text style={styles.tableRowText}>{i[0]}</Text>
+                    <Text style={styles.tableRowText}>{i[1]}</Text>
+                  </View>
+                ))}
+              </View>
+            </ScrollView>
           </View>
         </View>
       </View>
@@ -126,10 +138,13 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: 'white',
   },
+  TableContainer: {
+    height: '80%',
+    padding: 10,
+  },
   table: {
     flexDirection: 'column',
     justifyContent: 'space-around',
-    height: '80%',
   },
   tableRow: {
     flexDirection: 'row',
