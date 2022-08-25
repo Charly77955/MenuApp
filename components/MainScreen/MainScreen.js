@@ -31,7 +31,7 @@ export class MainScreen extends Component {
         </SafeAreaView>
         <View>
           <Text style={styles.subtitle}>Recent</Text>
-          <ScrollView horizontal={true}>
+          <ScrollView vertical={true}>
             <HorizontalList />
           </ScrollView>
         </View>
