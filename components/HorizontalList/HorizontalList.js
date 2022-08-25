@@ -1,20 +1,20 @@
-import * as React from 'react';
-import {
-  FlatList,
-} from 'react-native';
+// import * as React from 'react';
+// import {
+//   FlatList,
+// } from 'react-native';
 
-import recentMenu from '../DataMenu/recentMenu.json'
+// import recentMenu from '../DataMenu/recentMenu.json'
 
-import ListItem from '../ListItem/ListItem';
+// import ListItem from '../ListItem/ListItem';
 
-export default HorizontalList = () => {
+// export default HorizontalList = () => {
 
-  return (
-    <FlatList
-      horizontal
-      data={recentMenu["RecentMenu"]}
-      keyExtractor={item => item.id}
-      renderItem={ListItem}
-    />
-  );
-};
+//   return (
+//     <FlatList
+//       horizontal
+//       data={recentMenu["RecentMenu"]}
+//       keyExtractor={item => item.id}
+//       renderItem={ListItem}
+//     />
+//   );
+// };

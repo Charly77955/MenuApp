@@ -3,15 +3,11 @@ import {
   Text,
   View,
   StyleSheet,
-  Image,
-  TextInput,
   ScrollView,
-  Button,
   TouchableHighlight,
   Dimensions,
   ImageBackground,
 } from 'react-native';
-import {useNavigation} from '@react-navigation/native';
 
 export class DetailsScreen extends Component {
   constructor() {

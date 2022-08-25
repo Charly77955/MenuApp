@@ -8,7 +8,7 @@ import {
 import DisplayTrendingMenu from '../DisplayMenu/DisplayTrendingMenu';
 import SearchBar from '../SearchBar/SearchBar';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import HorizontalList from '../HorizontalList/HorizontalList';
+import DisplayRecentMenu from '../DisplayMenu/DisplayRecentMenu';
 export class MainScreen extends Component {
   constructor(props) {
     super(props);
@@ -27,8 +27,8 @@ export class MainScreen extends Component {
         </SafeAreaView>
         <View>
           <Text style={styles.subtitle}>Recent</Text>
-          <ScrollView vertical={true}>
-            <HorizontalList />
+          <ScrollView horizontal={true}>
+            <DisplayRecentMenu />
           </ScrollView>
         </View>
       </View>
@@ -56,18 +56,5 @@ const styles = StyleSheet.create({
     width: 200,
     height: 150,
     marginBottom: 10,
-  },
-  // dish: {
-  //   flexDirection: 'column',
-  //   marginRight: 20,
-  // },
-  // foodRecentImage: {
-  //   width: 150,
-  //   height: 150,
-  //   marginBottom: 10,
-  // },
-  foodText: {
-    color: 'white',
-    marginBottom: 20,
-  },
+  }
 });
