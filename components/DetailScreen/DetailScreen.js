@@ -15,7 +15,6 @@ export class DetailsScreen extends Component {
   }
   render() {
     this.food = this.props.route.params?.data;
-    this.tag = this.props.route.params?.tag;
     let image = {uri: this.food.imagen};
     //console.log(this.food);
     return (
@@ -34,7 +33,7 @@ export class DetailsScreen extends Component {
                 <Text style={styles.closeButtonText}>X</Text>
               </TouchableHighlight>
               <View style={styles.Titles}>
-                <Text style={styles.textTag}>{this.tag}</Text>
+                <Text style={styles.textTag}>{this.food.tag}</Text>
                 <Text style={styles.textTitle}>{this.food.name}</Text>
               </View>
             </View>

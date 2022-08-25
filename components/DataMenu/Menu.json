@@ -1,10 +1,11 @@
 {
-    "TrendingMenu": [
+    "Menu": [
         {
             "id": "1",
             "name": "Hamburguesa con papas",
             "imagen": "https://previews.123rf.com/images/maxsheb/maxsheb1909/maxsheb190900134/129462448-hamburguesa-con-papas-fritas-en-el-pergamino.jpg",
             "servings": 6,
+            "tag": "Trending",
             "ingredients": [
             ["carne", "250g"],
             ["queso cheddar ", "50g"],
@@ -19,6 +20,7 @@
             "name": "Pizza jamon y morron",
             "imagen": "https://i0.wp.com/recetasargentinas.net/wp-content/uploads/2013/10/pizza-jamon-y-morrones-e1381836891874.jpg?fit=400%2C301&ssl=1",
             "servings": 4,
+            "tag": "Trending",
             "ingredients": [
             ["Masa pizza", "300g"],
             ["Jamon", "150g"],
@@ -30,13 +32,20 @@
         {
             "id": "3",
             "name": "Papas con cheddar",
-            "imagen": "https://media-cdn.tripadvisor.com/media/photo-p/17/60/6c/01/papas-fritas-con-queso.jpg"
+            "imagen": "https://media-cdn.tripadvisor.com/media/photo-p/17/60/6c/01/papas-fritas-con-queso.jpg",
+            "servings": 8,
+            "tag": "Trending",
+            "ingredients": [
+                ["Papas", "200g"],
+                ["Cheddar", "100g"]
+            ]
         },
         {
             "id": "4",
             "name": "Sandwich vegano",
             "imagen": "https://www.clarin.com/img/2019/09/12/PzdIJYeve_1200x630__1.jpg",
             "servings": 8,
+            "tag": "Trending",
             "ingredients": [
                 ["Pan tierno de espelta", "200g"],
                 ["Aguacate", "100g"],
@@ -52,6 +61,7 @@
             "name": "Quesadillas",
             "imagen": "https://www.paulinacocina.net/wp-content/uploads/2020/08/quesadillas-2124910-960-720-640x427.jpg?x11474",
             "servings": 8,
+            "tag": "Trending",
             "ingredients": [
                 ["Harina", "500g"],
                 ["Manteca", "80g"],
@@ -63,6 +73,7 @@
             "name": "Tacos de carne",
             "imagen":"https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2020/01/09214916/RFB-2312-2-tacos.jpg",
             "servings": 24,
+            "tag": "Trending",
             "ingredients": [
                 ["Carne molida", "500g"],
                 ["Cebolla", "75g"],
@@ -70,8 +81,99 @@
                 ["Queso amarillo", "200g"],
                 ["Morron", "150g"]
             ]
-        }
-
-    ]
-    
+        },
+        {
+      "id": "1",
+      "name": "pozole",
+      "imagen": "https://d320djwtwnl5uo.cloudfront.net/recetas/share/pozol_LskhKImMVctRux2AQjTPirWZCUGJ76.png",
+      "servings": 6,
+      "tag": "Recent",
+      "ingredients": [
+        ["Cebolla", "300g"],
+        ["Ajo", "4 dientes"],
+        ["Maiz cacahuazintle", "1000g"],
+        ["Pulpa de espaldilla", "600g"],
+        ["Manteca de cerdo", "2cdas"],
+        ["Rabanito laminado", "200g"]
+      ]
+    },
+    {
+      "id": "2",
+      "name": "carne en su jugo",
+      "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/images/2020/08/carne-en-su-jugo-para-4-personas.jpg",
+      "servings": 6,
+      "tag": "Recent",
+      "ingredients": [
+        ["Bistec de res", "1000g"],
+        ["Caldo de frijol", "1 litro"],
+        ["Dientes de ajo", "2"],
+        ["Manteca de cerdo", "120g"],
+        ["Tocino corte grueso", "200g"],
+        ["Cilantro picado", "100g"],
+        ["Limon", "1"],
+        ["Cebolla", "125g"]
+      ]
+    },
+    {
+      "id": "3",
+      "name": "tacos de adobada",
+      "imagen": "https://i.pinimg.com/originals/a4/7c/c6/a47cc65ac43865d14bf03a631a5991b5.jpg",
+      "servings": 6,
+      "tag": "Recent",
+      "ingredients": [
+        ["Tortilla de maiz", "500g"],
+        ["Lomo de cerdo ", "2000g"],
+        ["Chile ancho", "3"],
+        ["Cebolla", "120g"],
+        ["Cilantro", "200g"],
+        ["Diente de ajo1", "3"],
+        ["Vinagre de manzana", "100ml"]
+      ]
+    },
+    {
+      "id": "4",
+      "name": "sushi",
+      "imagen": "https://images.hola.com/imagenes/cocina/recetas/20200408165233/maki-sushi-tempura-pollo/0-809-231/maki-sushi-pollo-m.jpg",
+      "servings": 6,
+      "tag": "Recent",
+      "ingredients": [
+        ["Arroz para sushi", "500g"],
+        ["Alga nori ", "100g"],
+        ["Wasabi", "100ml"],
+        ["Salsa de soja", "200ml"],
+        ["Salmon", "1000g"]
+      ]
+    },
+    {
+      "id": "5",
+      "name": "torta ahogada",
+      "imagen": "https://dam.cocinafacil.com.mx/wp-content/uploads/2017/03/torta-ahogada-.jpg",
+      "servings": 6,
+      "tag": "Recent",
+      "ingredients": [
+        ["Jitomate", "1000g"],
+        ["Cebolla", "200g"],
+        ["Dientes de ajo", "2"],
+        ["Carne de cerdo", "400g"],
+        ["Bolillos", "4"],
+        ["Aceite", "20ml"]
+      ]
+    },
+    {
+      "id": "6",
+      "name": "ramen",
+      "imagen": "https://s1.eestatic.com/2016/11/15/cocinillas/cocinillas_170994703_116270236_1706x960.jpg",
+      "servings": 6,
+      "tag": "Recent",
+      "ingredients": [
+        ["Cebolla", "200g"],
+        ["Dientes de ajo", "3"],
+        ["Zanahoria", "2"],
+        ["Costilla de cerdo", "300g"],
+        ["Salsa de soja", "100ml"],
+        ["Fideos de arroz", "500g"],
+        ["Cebolla de verdeo", "100g"]
+      ]
+    }
+  ]
 }

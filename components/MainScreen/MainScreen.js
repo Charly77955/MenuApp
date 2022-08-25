@@ -1,34 +1,42 @@
 import React, {Component} from 'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  ScrollView,
-} from 'react-native';
-import DisplayTrendingMenu from '../DisplayMenu/DisplayTrendingMenu';
-import SearchBar from '../SearchBar/SearchBar';
+import {Text, View, StyleSheet, ScrollView} from 'react-native';
+import SearchBar from '../SearchBar/searchBar';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import DisplayRecentMenu from '../DisplayMenu/DisplayRecentMenu';
+import DisplayMenu from '../DisplayMenu/DisplayMenu';
 export class MainScreen extends Component {
   constructor(props) {
     super(props);
     this.data = [];
+    this.trending = [];
+    this.recent = [];
+  }
+
+  listData() {
+    let count = Object.keys(this.data.Menu).length;
+    for (let i = 0; i < count; i++) {
+      if (this.data.Menu[i].tag == 'Recent')
+        this.recent.push(this.data.Menu[i]);
+      else this.trending.push(this.data.Menu[i]);
+    }
   }
 
   render() {
+    this.data = require('../DataMenu/Menu.json');
+    this.listData();
+
     return (
       <View style={styles.container}>
         <SearchBar />
         <SafeAreaView>
           <Text style={styles.subtitle}>Trending</Text>
           <ScrollView horizontal={true}>
-            <DisplayTrendingMenu />
+            <DisplayMenu menu={this.trending} />
           </ScrollView>
         </SafeAreaView>
         <View>
           <Text style={styles.subtitle}>Recent</Text>
           <ScrollView horizontal={true}>
-            <DisplayRecentMenu />
+            <DisplayMenu menu={this.recent} />
           </ScrollView>
         </View>
       </View>
@@ -56,5 +64,5 @@ const styles = StyleSheet.create({
     width: 200,
     height: 150,
     marginBottom: 10,
-  }
+  },
 });
