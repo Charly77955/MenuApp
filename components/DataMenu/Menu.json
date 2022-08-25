@@ -6,15 +6,12 @@
             "imagen": "https://previews.123rf.com/images/maxsheb/maxsheb1909/maxsheb190900134/129462448-hamburguesa-con-papas-fritas-en-el-pergamino.jpg",
             "servings": 6,
             "ingredients": [
-            ["olive oil", "1 tbsp"],
-            ["onion ", "1"],
-            ["garlic cloves", "2"],
-            ["chorizo", "120g"],
-            ["chopped tomatoes", "2 x 400g cans"],
-            ["caster sugar", "1 tsp"],
-            ["fresh gnocchi", "600g"],
-            ["mozzarella ball", "125g"],
-            ["basil", "small bunch"]
+            ["carne", "250g"],
+            ["queso cheddar ", "50g"],
+            ["cebolla morada", "50g"],
+            ["Tomates cherry", "120g"],
+            ["Jamon", "80g"]
+            
     ]
         },
         {
@@ -23,12 +20,11 @@
             "imagen": "https://i0.wp.com/recetasargentinas.net/wp-content/uploads/2013/10/pizza-jamon-y-morrones-e1381836891874.jpg?fit=400%2C301&ssl=1",
             "servings": 4,
             "ingredients": [
-            ["toasted sesame oil", "2 tbsp"],
-            ["skinless and boneless chicken thighs", "6"],
-            ["large garlic cloves", "2"],
-            ["ginger", "1 thumb-sized piece"],
-            ["runny honey", "50g"],
-            ["light soy sauce", "30ml"]
+            ["Masa pizza", "300g"],
+            ["Jamon", "150g"],
+            ["Morron", "300g"],
+            ["Salsa de tomate", "200g"]
+           
     ]
         },
         {
@@ -42,10 +38,12 @@
             "imagen": "https://www.clarin.com/img/2019/09/12/PzdIJYeve_1200x630__1.jpg",
             "servings": 8,
             "ingredients": [
-                ["plain flour", "ea"],
-                ["large eggs", "2"],
-                ["milk", "300ml"],
-                ["sunflower or vegetable oil", "1 tbsp"]
+                ["Pan tierno de espelta", "200g"],
+                ["Aguacate", "100g"],
+                ["Aceite de oliva", "1 cucharada"],
+                ["Hojas verdes", "100g"],
+                ["Rodajas de tomate", "100g"],
+                ["Brotes de alfalfa", "150g"]
             ]
 
         },
@@ -55,10 +53,9 @@
             "imagen": "https://www.paulinacocina.net/wp-content/uploads/2020/08/quesadillas-2124910-960-720-640x427.jpg?x11474",
             "servings": 8,
             "ingredients": [
-                ["large chicken breasts", "2"],
-                ["red onion", "1"],
-                ["red pepper", "1"],
-                ["red chilli", "1"]
+                ["Harina", "500g"],
+                ["Manteca", "80g"],
+                ["Queso", "150g"]       
     ]
         },
         {
@@ -67,9 +64,11 @@
             "imagen":"https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2020/01/09214916/RFB-2312-2-tacos.jpg",
             "servings": 24,
             "ingredients": [
-                ["plain flour", "250g"],
-                ["caster sugar", "75g"],
-                ["butter", "175g"]
+                ["Carne molida", "500g"],
+                ["Cebolla", "75g"],
+                ["Ajo", "2 dientes"],
+                ["Queso amarillo", "200g"],
+                ["Morron", "150g"]
             ]
         }
 
