@@ -8,6 +8,8 @@ import {
   Dimensions,
   ImageBackground,
 } from 'react-native';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import {faXmark, faShare, faHeart} from '@fortawesome/free-solid-svg-icons';
 
 export class DetailsScreen extends Component {
   constructor() {
@@ -25,13 +27,25 @@ export class DetailsScreen extends Component {
             source={image}
             imageStyle={{opacity: 0.7}}>
             <View style={styles.imageHero}>
-              <TouchableHighlight
-                style={styles.closeButton}
-                onPress={() => {
-                  this.props.navigation.goBack();
-                }}>
-                <Text style={styles.closeButtonText}>X</Text>
-              </TouchableHighlight>
+              <View style={styles.flexRow}>
+                <TouchableHighlight
+                  style={styles.closeButton}
+                  onPress={() => {
+                    this.props.navigation.goBack();
+                  }}>
+                  <Text style={styles.closeButtonText}>
+                    <FontAwesomeIcon icon={faXmark} color="white" />
+                  </Text>
+                </TouchableHighlight>
+                <View style={styles.flexRow}>
+                  <FontAwesomeIcon
+                    icon={faShare}
+                    color="white"
+                    style={styles.marginRight}
+                  />
+                  <FontAwesomeIcon icon={faHeart} color="white" />
+                </View>
+              </View>
               <View style={styles.Titles}>
                 <Text style={styles.textTag}>{this.food.tag}</Text>
                 <Text style={styles.textTitle}>{this.food.name}</Text>
@@ -151,5 +165,12 @@ const styles = StyleSheet.create({
   },
   tableRowText: {
     color: 'white',
+  },
+  flexRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  marginRight: {
+    marginRight: 10,
   },
 });
